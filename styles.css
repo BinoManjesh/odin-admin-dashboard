@@ -1,0 +1,17 @@
+body {
+    display: grid;
+    grid-template: auto auto / auto 1fr;
+}
+
+div.header {
+    background-color: white;
+}
+
+div.dashboard {
+    background-color: #3b82f6;
+    grid-row: 1 / -1
+}
+
+div.content {
+    background-color: #d1d5db;
+}

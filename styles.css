@@ -1,17 +1,47 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 body {
     display: grid;
-    grid-template: auto auto / auto 1fr;
+    grid-template: auto 1fr / min-content 1fr;
+    margin: 0;
 }
 
 div.header {
-    background-color: white;
+    background-color: #0369a1;
 }
 
-div.dashboard {
-    background-color: #3b82f6;
-    grid-row: 1 / -1
+div.nav {
+    background-color: #1e3a8a;
+    grid-row: 1 / -1;
+    padding: 0.5rem;
+    padding-right: 3rem;
+    display: grid;
+    grid-template: repeat(10, min-content) / 1fr 7fr;
+    place-items: center;
+    gap: 0.5rem;
+}
+
+div.nav img.title {
+    height: 2rem;
+}
+
+div.nav .title, div.nav .last {
+    margin-bottom: 1rem;
+}
+
+div.nav a, div.nav span {
+    justify-self: start;
+    color: initial;
+    text-decoration: none;
+}
+
+div.nav img {
+    height: 1rem;
 }
 
 div.content {
-    background-color: #d1d5db;
+    background-color: #0f172a;
 }

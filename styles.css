@@ -59,7 +59,8 @@ div.header div.profile img {
 }
 
 div.nav {
-    background-color: #1e3a8a;
+    background-color: #0284c7;
+    font-family: Poppins, sans-serif;
     grid-row: 1 / -1;
     padding: 0.5rem;
     padding-right: 3rem;
@@ -67,6 +68,7 @@ div.nav {
     grid-template: repeat(10, min-content) / 1fr 7fr;
     place-items: center;
     gap: 0.5rem;
+    color: white;
 }
 
 div.nav img.title {
@@ -79,7 +81,7 @@ div.nav .title, div.nav .last {
 
 div.nav a, div.nav span {
     justify-self: start;
-    color: initial;
+    color: inherit;
     text-decoration: none;
 }
 

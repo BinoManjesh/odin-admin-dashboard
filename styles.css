@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     height: 100%;
+    font-size: larger;
 }
 
 body {
@@ -11,6 +12,50 @@ body {
 
 div.header {
     background-color: #0369a1;
+    display: grid;
+    grid-template: auto auto / auto auto;
+    padding: 1rem 2rem;
+}
+
+div.header form img {
+    height: 1rem;
+    display: block;
+}
+
+div.header form button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+div.header form input {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+div.header form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+div.header div.profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+div.header div.profile img.icon {
+    height: 1rem;
+}
+
+div.header div.profile img {
+    height: 2rem;
+    aspect-ratio: 1;
+    object-fit: cover   ;
+    border-radius: 1rem;
 }
 
 div.nav {

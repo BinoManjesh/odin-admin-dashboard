@@ -19,7 +19,7 @@ div.header {
     display: grid;
     grid-template: auto auto / auto auto;
     padding: 1rem 2rem;
-    row-gap: 2rem;
+    row-gap: 1rem;
 }
 
 div.header form {
@@ -80,10 +80,10 @@ div.header div.hello {
 
 div.header div.hello img {
     grid-row: 1 / -1;
-    height: 5em;
+    height: 3em;
     aspect-ratio: 1;
     object-fit: cover;
-    border-radius: 2.5em;
+    border-radius: 1.5em;
     align-self: center;
 }
 
@@ -143,24 +143,32 @@ div.nav img {
 
 div.content {
     background-color: #d1d5db;
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 2fr;
+    font-size: medium    ;
+    padding: 12.5px;
+    gap: 25px;
 }
 
 div.content div.projects {
-    padding: 12.5px;
-    font-size: small;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
 }
 
 div.content div.projects > div {
     display: grid;
+    height: max-content;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     gap: 25px;
+    flex-grow: 1;
 }
 
 div.content div.projects div.project {
     background-color: white;
-    padding: 48px;
-    border-radius: 24px;
-    border-left: 24px solid orange;
+    padding: 24px;
+    border-radius: 12px ;
+    border-left: 12px solid orange;
 }
 
 div.content div.projects div.project > div {
@@ -172,4 +180,18 @@ div.content div.projects div.project > div {
 
 div.content div.projects div.project img {
     height: 1.5em;
+}
+
+div.content div.announcements > div {
+    background-color: white;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+hr {
+    margin-left: 0;
+    margin-right: 0;
 }

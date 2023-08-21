@@ -15,6 +15,7 @@ div.header {
     display: grid;
     grid-template: auto auto / auto auto;
     padding: 1rem 2rem;
+    row-gap: 2rem;
 }
 
 div.header form {
@@ -65,6 +66,47 @@ div.header div.profile img {
     aspect-ratio: 1;
     object-fit: cover   ;
     border-radius: 1rem;
+}
+
+div.header div.hello {
+    display: grid;
+    grid-template: auto auto / min-content auto;
+    gap: 0.5rem;
+}
+
+div.header div.hello img {
+    grid-row: 1 / -1;
+    height: 5em;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 2.5em;
+    align-self: center;
+}
+
+div.header div.hello p {
+    margin: 0;
+    align-self: end;
+}
+
+div.header div.hello p.handle {
+    margin: 0;
+    align-self: start;
+}
+
+div.header div.actions {
+    place-self: center end;
+    display: flex;
+    gap: 3em;
+}
+
+div.header div.actions button {
+    background-color: #0284c7;
+    height: 2em;
+    border-radius: 1em;
+    padding: 0 2em;
+    font-size: larger;
+    color: white;
+    border: none;
 }
 
 div.nav {

@@ -5,6 +5,10 @@ html, body {
     font-family: Poppins, sans-serif;
 }
 
+h1, h2, h3, p {
+    margin: 0;
+}
+
 body {
     display: grid;
     grid-template: auto 1fr / min-content 1fr;
@@ -84,12 +88,10 @@ div.header div.hello img {
 }
 
 div.header div.hello p {
-    margin: 0;
     align-self: end;
 }
 
 div.header div.hello p.handle {
-    margin: 0;
     align-self: start;
 }
 
@@ -140,5 +142,34 @@ div.nav img {
 }
 
 div.content {
-    background-color: #0f172a;
+    background-color: #d1d5db;
+}
+
+div.content div.projects {
+    padding: 12.5px;
+    font-size: small;
+}
+
+div.content div.projects > div {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 25px;
+}
+
+div.content div.projects div.project {
+    background-color: white;
+    padding: 48px;
+    border-radius: 24px;
+    border-left: 24px solid orange;
+}
+
+div.content div.projects div.project > div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    margin-top: 48px;
+}
+
+div.content div.projects div.project img {
+    height: 1.5em;
 }

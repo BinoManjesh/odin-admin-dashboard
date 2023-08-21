@@ -68,7 +68,7 @@ div.header div.profile img.icon {
 div.header div.profile img {
     height: 2rem;
     aspect-ratio: 1;
-    object-fit: cover   ;
+    object-fit: cover;
     border-radius: 1rem;
 }
 
@@ -182,16 +182,37 @@ div.content div.projects div.project img {
     height: 1.5em;
 }
 
-div.content div.announcements > div {
+hr {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+div.content div.announcements, div.content div.trending {
+    display: flex;
+    flex-direction: column;
+}
+
+div.content div.announcements > div, div.content div.trending > div {
     background-color: white;
     border-radius: 10px;
     padding: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
-hr {
-    margin-left: 0;
-    margin-right: 0;
+div.content div.trending > div > div {
+    display: grid;
+    grid-template: repeat(2, auto) / min-content auto;
+    gap: 10px;
+}
+
+div.content div.trending img {
+    height: 2em;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 1rem;
+    grid-row: 1 / -1;
+    align-self: center;
 }
